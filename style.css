@@ -18,7 +18,8 @@ body {
   height: 100vh;
   min-width: 900px;
   min-height: 700px;
-  background: linear-gradient(rgb(85, 183, 225), rgb(4, 82, 146));
+  /* background: #000; */
+  background: linear-gradient(rgb(0, 0, 0), rgb(4, 82, 146));
   position: relative;
 }
 #botao1 {
@@ -47,11 +48,18 @@ body {
 .page {
   width: 423.5px;
   height: 654.5px;
-  background: #eee;
+  background: linear-gradient(#fef7f7, #9198e5);
   position: absolute;
   top: 0;
   right: 0;
   transition: transform 1s;
+}
+
+.page:hover {
+  z-index: 1111;
+  transform: perspective(2000px) rotate(-10deg);
+
+  box-shadow: 5px 5px 20px rgb(235, 151, 128);
 }
 
 .page:nth-child(1) {
